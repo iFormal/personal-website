@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
-      <body className={inter.className}>
+    <html lang="en">
+      <body className={`${inter.className} h-screen bg-zinc-800`}>
         <Navbar />
         {children}
         <Footer />
