@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import Gradientdiv from "@/components/gradientdiv";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Footer } from "./footer";
@@ -7,10 +8,10 @@ import { Navbar } from "./navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "James Ang",
-  description: "Created by James",
-};
+// export const metadata: Metadata = {
+//   title: "James Ang",
+//   description: "Created by James",
+// };
 
 export default function RootLayout({
   children,
@@ -18,11 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} h-screen bg-zinc-800`}>
-        <Navbar />
-        {children}
-        <Footer />
+    <html lang="en" className="dark">
+      <body className={`${inter.className} h-screen`}>
+        <Gradientdiv className="">
+          <Navbar />
+          {children}
+          <Footer />
+        </Gradientdiv>
         </body>
     </html>
   );
