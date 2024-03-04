@@ -3,7 +3,7 @@ import React from 'react';
 
 export const metadata: Metadata = {
   title: "James Ang",
-  description: "Created by James",
+  description: "Personal Portfolio project created in NextJS 14.",
 };
 
 export default function Home() {
@@ -11,12 +11,6 @@ export default function Home() {
     <main className="mx-auto w-full">
       <div className="flex justify-center items-center h-screen">
         <div className='container py-8'>
-          <section className='mb-8'>
-            <div><p className='text-4xl'>Welcome</p></div>
-          </section>
-          <section className='mb-8'>
-            <div><p className='text-4xl'>Welcome</p></div>
-          </section>
           <section className='mb-8'>
             <div><p className='text-4xl'>Welcome</p></div>
           </section>

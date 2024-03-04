@@ -8,11 +8,6 @@ import { Navbar } from "./navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "James Ang",
-//   description: "Created by James",
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{
