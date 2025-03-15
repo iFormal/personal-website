@@ -87,7 +87,7 @@ export default function Home() {
                   <div className="absolute inset-0 flex items-center justify-center text-gray-600">
                     <Image
                       src="/keyboard.png"
-                      alt='Project 1 Screenshot'
+                      alt="Project 1 Screenshot"
                       fill
                       className="object-cover"
                     />
