@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, {ReactNode} from "react";
 
@@ -17,9 +17,9 @@ const GradientPosition = () => {
                 y: ev.clientY + window.scrollY 
             });
         };
-        window.addEventListener('mousemove', updateMousePosition);
+        window.addEventListener("mousemove", updateMousePosition);
         return () => {
-            window.removeEventListener('mousemove', updateMousePosition);
+            window.removeEventListener("mousemove", updateMousePosition);
         };
     }, []);
 

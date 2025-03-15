@@ -1,7 +1,7 @@
-import { Metadata } from 'next';
-import React from 'react';
-import Gradientdiv from '@/components/gradientdiv';
-import Image from 'next/image';
+import { Metadata } from "next";
+import React from "react";
+import Gradientdiv from "@/components/gradientdiv";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "James Ang",

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from "react";
 
 interface NavbarProps {}
 
@@ -30,9 +30,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
       
       window.scrollTo({
         top: section.offsetTop - navbarHeight,
-        behavior: 'smooth'
+        behavior: "smooth"
       });
     }
   };
@@ -64,8 +64,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
       ref={navbarRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 p-6 flex justify-center items-center ${
         isSticky 
-          ? 'bg-black/50 backdrop-blur-md shadow-lg border-b border-gray-700/50' 
-          : 'bg-transparent border-b border-transparent'
+          ? "bg-black/50 backdrop-blur-md shadow-lg border-b border-gray-700/50" 
+          : "bg-transparent border-b border-transparent"
       }`}
     >
       <ul className="flex space-x-16 list-none">
@@ -76,8 +76,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
               onClick={(e) => scrollToSection(link.id, e)}
               className={`font-medium transition-colors ${
                 activeSection === link.id 
-                  ? 'text-white border-b-2 border-blue-500 pb-1' 
-                  : 'text-gray-400 hover:text-white'
+                  ? "text-white border-b-2 border-blue-500 pb-1" 
+                  : "text-gray-400 hover:text-white"
               }`}
             >
               {link.label}
