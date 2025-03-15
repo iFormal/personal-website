@@ -25,7 +25,7 @@ export default function Home() {
               Software Developer & Creative UI/UX Designer
             </p>
             <p className="text-lg max-w-2xl leading-relaxed text-gray-300">
-            Hello! I am a Year 3 Student currently studying at Nanyang Polytechnic, Diploma in Information Technology. <br /><br /> I was a former Govtech Intern as a UI / UX Designer and I'm currently serving National Service!
+            Hello! I am a Year 3 Student currently studying at Nanyang Polytechnic, Diploma in Information Technology. <br /><br /> I was a former Govtech Intern as a UI / UX Designer and I&apos;m currently serving National Service!
             </p>
             <div className="mt-12">
               <a 
