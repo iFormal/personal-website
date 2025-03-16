@@ -1,7 +1,6 @@
 "use client";
 import Gradientdiv from "@/components/gradientdiv";
 import { Inter } from "next/font/google";
-import { Footer } from "./footer";
 import "./globals.css";
 import { Navbar } from "./navbar";
 
@@ -18,7 +17,6 @@ export default function RootLayout({
         <Gradientdiv className="">
           <Navbar />
           {children}
-          <Footer />
         </Gradientdiv>
         </body>
     </html>
