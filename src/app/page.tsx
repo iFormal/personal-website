@@ -12,32 +12,81 @@ export default function Home() {
   return (
     <Gradientdiv className="w-full overflow-x-hidden text-white">
     <main className="w-full overflow-x-hidden bg-transparent text-white">
-        {/* About Me */}
-        <section id="about-me" className="min-h-screen flex items-center relative">
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black" />
+        {/* About Me Section */}
+        <section 
+          id="about-me" 
+          className="min-h-screen flex items-center relative overflow-hidden"
+          >
+          {/* Background Overlay */}
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute w-full h-full bg-gradient-to-b from-gray-700 to-black/20" />
           </div>
-          <div className="container mx-auto px-6 py-24 relative z-10">
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-              James Ang
-            </h1>
-            <p className="text-2xl md:text-4xl mb-8 max-w-2xl leading-relaxed">
-              Software Developer & Creative UI/UX Designer
-            </p>
-            <p className="text-lg max-w-2xl leading-relaxed text-gray-300">
-            Hello! I am a Year 3 Student currently studying at Nanyang Polytechnic, Diploma in Information Technology. <br /><br /> I was a former Govtech Intern as a UI / UX Designer and I&apos;m currently serving National Service!
-            </p>
-            <div className="mt-12">
-              <a 
-                href="#projects" 
-                className="px-8 py-3 text-lg font-medium bg-gradient-to-r from-blue-500 to-purple-600 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
-              >
-                View My Work (Work-in-Progress)
-              </a>
+
+          {/* Main Content Container */}
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
+              
+              {/* Left Column - Text Content */}
+              <div className="order-2 lg:order-1 text-center lg:text-left">
+                {/* Name Title */}
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 leading-tight">
+                  James Ang
+                </h1>
+
+                {/* Role/Title */}
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 leading-relaxed text-gray-100">
+                  Software Developer &amp; Creative UI/UX Designer
+                </p>
+
+                {/* Description */}
+                <div className="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-300 mb-8 sm:mb-10 lg:mb-12 max-w-2xl mx-auto lg:mx-0">
+                  <p>
+                    Hello! I am a Year 3 Student currently studying at Nanyang Polytechnic, 
+                    Diploma in Information Technology.
+                  </p>
+                  <br />
+                  <p>
+                    I was a former Govtech Intern as a UI/UX Designer and I&apos;m currently 
+                    serving National Service!
+                  </p>
+                </div>                
+              </div>
+
+              {/* Right Column - Profile Image */}
+              <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div className="relative group">
+                  
+                  {/* Animated Background Blob */}
+                  <div className="absolute -inset-3 sm:-inset-4 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-full blur-lg sm:blur-xl group-hover:blur-2xl transition-all duration-500 animate-pulse">
+                  </div>
+                  
+                  {/* Profile Image Container */}
+                  <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-600 shadow-2xl group-hover:scale-105 transition-transform duration-500">
+                    <img 
+                      src="/profilepic.jpg" 
+                      alt="James Ang - Software Developer & UI/UX Designer" 
+                      className="w-full h-full object-cover object-center transition-all duration-500"
+                      loading="lazy"
+                    />
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                  </div>
+
+                  {/* Decorative Floating Elements */}
+                  <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-blue-500 rounded-full animate-bounce delay-100">
+                  </div>
+                  <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-4 h-4 sm:w-6 sm:h-6 bg-purple-600 rounded-full animate-bounce delay-300">
+                  </div>
+                  
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
-
+        
         {/* Skills */}
         <section id="skills" className="min-h-screen flex items-center relative py-24">
           <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-900/20 to-black opacity-50" />
